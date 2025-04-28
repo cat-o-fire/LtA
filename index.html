@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="/stylesheets/LtAstyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+    <script>
+        const { animate } = anime;
+    </script>
     <title>Document</title>
 
     <style>
-        .button {
-                font: bold 11px Arial;
-                text-decoration: none;
-                background-color: #EEEEEE;
-                color: #333333;
-                padding: 2px 6px 2px 6px;
-                border-top: 1px solid #CCCCCC;
-                border-right: 1px solid #333333;
-                border-bottom: 1px solid #333333;
-                border-left: 1px solid #CCCCCC;
-            }
+        .art {
+            width: 256px;
+            height: 256px;
+            border: 8px black;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
 <body>
-    <h1 id="top homepage">LtA</h1>
+    <h1 id="top homepage">License to Adventure</h1>
         <p>Webpage with all relevant campaign links and a gallery for art & maps</p>
+        <img src="gallery/LtA_cocktails_lex.webp" class="art" alt="">
     <h3 id="links">Links</h3>
 		<p>The <a href="http://www.worldanvil.com/epic/oDytS1c3U5o65cgw7Yzq0gUFdz6f6o/join/lFYh-CIsA-RExHZd" class="button">WorldAnvil<a> site with all of Lex's compilation work.</p>
 		<p>The <a href="https://new.tableplop.com/join/keep-brawl-search-spider" class="button">Tabletop</a> site and <a href="https://docs.google.com/spreadsheets/d/1piLg9X9GeZhkd5vz2IbA2fTla8D1TtA9XDi2Ix5oSlM/edit?gid=0#gid=0" class="button">Accounting Spreadsheet</a>, home to Ana's secretary duties.</p>
-        <p>The <a href="gallery/index.html" class="button">Gallery</a> for art.</p>
+        <p>The <a href="/LtA/gallery/index.html" class="button">Gallery</a> for art.</p>
+        <p>The <a href="/LtA/maps/index.html" class="button">Atlas</a> for cartographers.</p>
 		<p>More decoration to come as I learn how to use css stylesheets!</p>
 </body>
 </html>
