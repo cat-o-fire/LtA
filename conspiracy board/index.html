@@ -3,21 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/LtAstyle.css">
-    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
-    <script>
-        const { animate } = anime;
-        anime.createDraggable('.square');
-        anime.animate();
-        anime.createTimeline();
-        
-    </script>
+    <link rel="stylesheet" href="/LtA/stylesheets/LtAstyle.css">
+    <script type="module" src="anime.esm.js"></script>
+    <script src="cb animation.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="large row centered">
-        <div class="square draggable"></div>
+    <div class="entire-board">
+        <div class="art-box">
+            <div class="drag-box">
+                <img src="/LtA/gallery/LtA_embrelle.webp" class="art-mini" alt="">
+                <p class="caption">Embrelle</p>
+            </div>
+            <div class="drag-box">
+                <img src="/LtA/gallery/LtA_edmund.webp" class="art-mini" alt="">
+                <p class="caption">Edmund</p>
+            </div>
+            <div class="drag-box">
+                <img src="/LtA/gallery/LtA_lotz.webp" class="art-mini" alt="">
+                <p class="caption">Lotz</p>
+            </div>
+            <div class="drag-box">
+                <img src="/LtA/gallery/LtA_stirgio.webp" class="art-mini" alt="">
+                <p class="caption">Stirgio</p>
+            </div>
+            <div class="drag-box">
+                <img src="/LtA/gallery/LtA_skip.webp" class="art-mini" alt="">
+                <p class="caption">Skip</p>
+            </div>
+            <div class="drag-box">
+                <img src="/LtA/gallery/LtA_nel.webp" class="art-mini" alt="">
+                <p class="caption">Nel</p>
+            </div>
+            <div class="drag-box">
+                <img src="/LtA/gallery/LtA_soni2.webp" class="art-mini" alt="">
+                <p class="caption">Soni</p>
+            </div>
+            <div class="drag-box">
+                <img src="/LtA/gallery/LtA_wren.webp" class="art-mini" alt="">
+                <p class="caption">Wren</p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <textarea id="moveable-text" rows="2" columns="96">
+                Ramblings
+            </textarea>
+        </div>
     </div>
-    <p>provide a bank of PC and NPC images-one for each to keep things simple-and then editable text boxes and use draggable so people can set up their conspiracy theory boards as they wish</p>
+    <p>Return to <a href="/LtA/index.html" class="button">Homepage.</a></p>
 </body>
 </html>

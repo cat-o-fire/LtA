@@ -1,23 +1,92 @@
-body {
-    background-color: #333333;
-}
 h1 {
     text-align: center;
-    color: white;
+    color: whitesmoke;
     font-family: courier;
     font-size: 250%;
 }
 h3 {
     text-align: center;
-    color: white;
+    color: whitesmoke;
     font-family: courier;
     font-size: 200%;
 }
 p {
     text-align: center;
-    color: white;
+    color: whitesmoke;
     font-family: courier;
     font-size: 150%;
+}
+body{
+    background-color: #333333;
+}
+textarea{
+    resize: both;
+    border: whitesmoke;
+}
+.top-section{
+    background-color: #333333;
+    display: grid;
+    width: 100vw;
+    height: fit-content;
+}
+.fp-img{
+    width: 256px;
+    height: 256px;
+    border: black;
+    border-style: solid;
+    border-width: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.caption{
+    text-align: center;
+    color: whitesmoke;
+    font-family: courier;
+    font-size: 75%;
+}
+.art{
+    width: 256px;
+    height: 256px;
+    border: black;
+    border-style: solid;
+    border-width: 8px;
+}
+.art-box {
+    width: fit-content;
+    height: 600px;
+    overflow-y: auto;
+    background-color:#333;
+    border: whitesmoke;
+    border-style: solid;
+    border-width: 8px;
+    padding: 8px;
+    margin: 8px;
+    float: left;
+}
+.drag-box{
+    width: 136px;
+    height: 168px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    border: black;
+    border-style: solid;
+    border-width: 4px;
+    margin: 8px;
+    padding: 4px;
+}
+.art-mini{
+    width: 128px;
+    height: 128px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: black;
+    border-style: solid;
+    border-width: 4px;
+    margin: auto;
 }
 .button {
     font: bold 100% courier;
@@ -30,3 +99,148 @@ p {
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
 }
+.grid-container{
+    width: 90%;
+    height: 600px;
+    display: flex;
+    background-color:#333333;
+    background-image: linear-gradient(whitesmoke 1px, transparent 0);
+    border: whitesmoke;
+    border-style: solid;
+    border-width: 8px;
+    padding: 8px;
+    margin: 8px;
+    justify-self: end;
+}
+.entire-board{
+    display: grid;
+    grid-template-columns: 136px auto;
+    background-size: cover;
+    background-color:#333333;
+    border: whitesmoke;
+    border-style: solid;
+    border-width: 8px;
+    padding: 8px;
+}
+.NPC-gallery{
+    display: grid;
+    grid-auto-flow: row dense;
+    gap: 24px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    justify-content: space-evenly; 
+}
+.PC-gallery{
+    display: grid;
+    grid-auto-flow: row dense;
+    gap: 24px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+}
+.dice-container{
+    display: grid;
+    width: 100vw;
+    height: 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+.button-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: fit-content;
+}
+.numbers{ /* can't figure out why it's not centered on the d6*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 64px;
+    font-size: 100%;
+    font-weight: bold;
+    color: #333333;
+    position: relative;
+}
+.btn-dice{
+    width: 48px;
+    margin: 8px;
+    position: relative;
+}
+.d4{
+    position: relative;
+    width: 64px;
+    height: 64px;
+    clip-path: polygon(50% 0,100% 100%,0 100%);
+    background: whitesmoke;
+  }
+.d6{
+    position: relative;
+    width: 64px;
+    height: 64px;
+    background: whitesmoke;
+}
+.d8-face{
+    position: relative;
+    bottom: 8px;
+    width: 96px;
+    height: 96px;
+    clip-path: polygon(50% 0%,98% 77%,2% 77%);
+    background: whitesmoke;
+}
+.d8-body{
+    width: 96px; /* adjust to control the size */
+    aspect-ratio: 1;
+    clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+    background:#717171;
+}
+.d10-face{
+    position: relative;
+    bottom: 12px;
+    width: 96px;
+    aspect-ratio: 1;
+    clip-path: polygon(50% 0%, 85% 70%, 50% 90%, 15% 70%);
+    background: whitesmoke
+}
+.d10-body{
+    width: 96px; /* adjust to control the size */
+    aspect-ratio: 1;
+    clip-path: polygon(50% 0%,100% 35%,100% 65%,50% 100%,0% 65%,0% 35%);
+    background:#717171;
+}
+.d12-face{
+    position: relative;
+    left: 16px;
+    width: 64px; /* adjust to control the size */
+    aspect-ratio: 1;
+    clip-path: polygon(79.39% 90.45%,20.61% 90.45%,2.45% 34.55%,50% 0%,97.55% 34.55%);
+    background: whitesmoke;
+}
+.d12-body{
+    width: 96px; /* adjust to control the size */
+    aspect-ratio: 1;
+    clip-path: polygon(97.25% 66.34%,78.62% 91%,49.06% 99.99%,19.85% 89.89%,2.16% 64.55%,2.75% 33.66%,21.38% 9%,50.94% 0.01%,80.15% 10.11%,97.84% 35.45%);
+    background: #717171;
+}
+.d20-face{
+    position: relative;
+    left: 24px;
+    top: 8px;
+    width: 48px;
+    height: 48px;
+    clip-path: polygon(50% 0,100% 100%,0 100%);
+    background: whitesmoke;
+}
+.d20-body {
+    width: 96px; /* adjust to control the size */
+    aspect-ratio: 1;
+    clip-path: polygon(92.77% 75.9%,48.95% 99.99%,6.18% 74.09%,7.23% 24.1%,51.05% 0.01%,93.82% 25.91%);
+    background: #717171;;
+}
+
+/* what i'm using for the shapes:
+https://verpex.com/blog/website-tips/css-shapes-the-triangle    <-- now i know how to make any polygon by hand!
+https://css-generators.com/polygon-shape/   */

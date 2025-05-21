@@ -3,33 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/LtAstyle.css">
-    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
-    <script>
-        const { animate } = anime;
-    </script>
+    <link rel="stylesheet" href="stylesheets/LtAstyle.css">
+    <script src="main.js" defer></script>
     <title>Document</title>
-
-    <style>
-        .art {
-            width: 256px;
-            height: 256px;
-            border: 8px black;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
 </head>
 <body>
-    <h1 id="top homepage">License to Adventure</h1>
-        <p>Webpage with all relevant campaign links and a gallery for art & maps</p>
-        <img src="gallery/LtA_cocktails_lex.webp" class="art" alt="">
-    <h3 id="links">Links</h3>
+    <div class="top-section">
+        <h1>License to Adventure</h1>
+            <p>Webpage with all relevant campaign links and a gallery for art & maps</p>
+        <img src="gallery/LtA_cocktails_lex.webp" class="fp-img" alt="">
+    </div>
+    
+    <div class="dice-container" id="dice-container-id">
+        <div class="d4">
+            <p class="numbers">4</p>
+        </div>
+        <div class="d6">
+            <p class="numbers">6</p>
+        </div>
+        <div class="d8-body">
+            <div class="d8-face">
+                <p class="numbers">8</p>
+            </div>
+        </div>
+        <div class="d10-body">
+            <div class="d10-face">
+                <p class="numbers">10</p>
+            </div>
+        </div>
+        <div class="d12-body">
+            <div class="d12-face">
+                <p class="numbers">12</p>
+            </div>
+        </div>
+        <div class="d20-body">
+            <div class="d20-face">
+                <p class="numbers">20</p>
+            </div>
+        </div>
+    </div>
+    <div class="button-holder">
+        <button type="button" class="btn-dice">Add D4</button>
+        <button type="button" class="btn-dice">Add D6</button>
+        <button type="button" class="btn-dice">Add D8</button>
+        <button type="button" class="btn-dice">Add D10</button>
+        <button type="button" onclick="new d12Spawn()" class="btn-dice">Add D12</button>
+        <button type="button" onclick="new d20Spawn()" class="btn-dice">Add D20</button>
+        <button type="button" onclick="rollDice()" class="btn-dice">Roll Dice</button>
+    </div>
+
+    <h3>Links</h3>
 		<p>The <a href="http://www.worldanvil.com/epic/oDytS1c3U5o65cgw7Yzq0gUFdz6f6o/join/lFYh-CIsA-RExHZd" class="button">WorldAnvil<a> site with all of Lex's compilation work.</p>
 		<p>The <a href="https://new.tableplop.com/join/keep-brawl-search-spider" class="button">Tabletop</a> site and <a href="https://docs.google.com/spreadsheets/d/1piLg9X9GeZhkd5vz2IbA2fTla8D1TtA9XDi2Ix5oSlM/edit?gid=0#gid=0" class="button">Accounting Spreadsheet</a>, home to Ana's secretary duties.</p>
+        <p><a href="https://docs.google.com/spreadsheets/d/1NUGUH_33xBjS4Q6SO9TSPUf4DK2OI1eB74VPBvsF_jY/edit?gid=994955057#gid=994955057" class="button">Candy's Character Sheet & Redacted Mission Details.</a></p>
+        <p><a href="https://www.dndbeyond.com/characters/123639622" class="button">Reggie's Character Sheet.</a></p>
         <p>The <a href="/LtA/gallery/index.html" class="button">Gallery</a> for art.</p>
         <p>The <a href="/LtA/maps/index.html" class="button">Atlas</a> for cartographers.</p>
-		<p>More decoration to come as I learn how to use css stylesheets!</p>
+        <p>The <a href="/LtA/conspiracy board/index.html" class="button">Conspiracy Board</a> for the theorizers in chat.</p>
 </body>
 </html>
